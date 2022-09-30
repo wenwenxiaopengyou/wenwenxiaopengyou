@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
+<head>
+	<title>Happy Birthday</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Happy Birthday Xola">
+	<meta name="robots" content="index, follow" />
+	<link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" /> 
+    <meta name="keywords" content="Birthday, Happy">
+    <!-- Strat of Facebook Meta -->
+    <meta property="og:type" content="E-Greeting" />
+    <meta property="og:image" content="favicon.ico" />
+    <meta property="og:description" content="Wish you a very Happy Birthday">
+    <!-- End of Facebook Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="loading.css">
+	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet/less" href="cake.less">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+
+	<style>
+        html {
+            height: 100%;
+        }
+        body {
+            font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+            background: #79a8ae;
+            color: #CFEBE4;
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 1.2px;
+            margin: 0;
+        }
+        a {
+            color: #ebf7f4;
+        }
+        .body--ready {
+            background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+        }
+        .text {
+            position: fixed;
+            bottom: 100px;
+            text-align: center;
+            width: 100%;
+        }
+        .canvas {
+            margin: 0 auto;
+            display: block;
+        }
+        img#logo {
+            width: 128px;
+            background-size: cover;
+            border-radius: 200px;
+            box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
+            border: 3px solid #00a0ff;
+            opacity: 1;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            transition: all 1.0s;
+        }
+        #logo:hover {
+            box-shadow: 0 0 10px #fff;
+            -webkit-box-shadow: 0 0 19px #fff;
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg); /* IE 9 */
+            -moz-transform: rotate(360deg); /* Firefox */
+            -webkit-transform: rotate(360deg); /* Safari 和 Chrome */
+            -o-transform: rotate(360deg); /* Opera */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        }
+        .cs {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            position: absolute;
+            text-align: center;
+        }
+        .text {
+            position: fixed;
+            bottom: 80px;
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+        }
+        .text-right {
+            position: fixed;
+            bottom: 50px;
+            text-align: right;
+            width: 100%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+	<div class="loading"></div>
+	<audio class="song" controls loop>
+        <source src="srg.mp3"></source>
+	   Your browser isn't invited for super fun audio time.
+    </audio>
+    <div class="balloons text-center" id="b1">
+    	<h2 style="color:#F2B300;">小</h2>
+    </div>
+    <div class="balloons text-center" id="b2">
+    	<h2 style="color:#0719D4;">朋</h2>
+    </div>
+	<div class="balloons text-center" id="b3">
+    	<h2 style="color:#D14D39;">友</h2>
+    </div>
+	<div class="balloons text-center" id="b4">
+    	<h2 style="color:#8FAD00;">生</h2>
+    </div>
+	<div class="balloons text-center" id="b5">
+    	<h2 style="color:#8377E4;">日</h2>
+    </div>
+    <div class="balloons text-center" id="b6">
+    	<h2 style="color:#99C96A;">快</h2>
+    </div>
+    <div class="balloons text-center" id="b7">
+    	<h2 style="color:#20CFB4;">乐</h2>
+    </div>
+
+    <img src="Balloon-Border.png" width="100%" class="balloon-border">
+ 
+
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_yellow"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_red"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_blue"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_green"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_pink"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_orange"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="banner.png" class="bannar">
+			</div>
+		</div>
+		<div class="row cake-cover">
+			<div class="col-md-12 texr-center">
+				<div class="cake">
+				  <div class="velas">
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				  </div>
+				  <div class="cobertura"></div>
+				  <div class="bizcocho"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row message">
+			<div class="col-md-12">
+				<p>
+					生日快乐啊🍰小朋友❤️<br>
+					希望新的一岁(18岁)你可以更开心更快乐！！<br>
+				    没有烦恼 一切顺利 嘻嘻！！
+				</p>
+				<p>
+					然后能够把催吐戒掉！！<br>
+					未来的路上，我会一直陪着你！！
+				</p>
+				<p>
+					还有今天也是十月的第一天，希望我们这个月都能更棒棒！！<br>
+					一起加油⛽️爱你❤️
+				</p>
+				<!-- <p>another year has gone</p>
+				<p>in a blink of the eyes</p>
+				<p><strong>however</strong></p>
+				<p>Do you know..?</p>
+				<p>today is just special</p>
+				<p>so special to you</p>
+				<p>that's why</p>
+				<p>Let's make it...</p>
+				<p>the best celebration ever</p>
+				<p>and let me share...</p>
+				<p>a piece of happiness to you</p>
+				<p>I made all this...</p>
+				<p>as a birthday present to you</p>
+				<p>thanks for being there</p>
+				<p>thanks for the friendship we made</p>
+				<p>thanks for everything</p>
+				<p>I wish you all the best</p>
+				<p>May your life be at ease</p>
+				<p>May all your wishes come true</p>
+				<p>Remember</p>
+				<p>your ambitions</p>
+				<p>you live as a free bird...</p>
+				<p>flying in the blue sky</p>
+				<p>Now things are different...</p>
+				<p>real story of your life</p>
+				<p>is just about to begin</p>
+				<p>indeed..</p>
+				<p>but...</p>
+				<p>don't worry</p>
+				<p>because...</p>
+				<p>God has your back</p>
+				<p>and</p>
+				<p>this year will be better</p>
+				<p>and I hope</p>
+				<p>you'll find...</p>
+				<p>happiness along the way</p>
+				<p>keep your spirit up</p>
+				<p>enjoy every single moment...</p>
+				<p>that you experience today</p>
+				<p>fill it with your most beautiful smile</p>
+				<p>and make it the best memory..</p>
+				<p>lastly...</p>
+				<p>I'd like to wish you one more time</p>
+				<p>a very happy birthday Xola Mathembisa</p> -->
+			</div>
+		</div>
+		
+		<div class="navbar navbar-fixed-bottom">
+			<div class="row">
+				<div class="col-md-6 text-center col-md-offset-3">
+					<button class="btn btn-primary" id="turn_on">点我点我</button>
+					<button class="btn btn-primary" id="play">放音乐🎵</button>
+					<button class="btn btn-primary" id="bannar_coming">我们一起庆祝吧生日吧🎉小朋友</button>
+					<button class="btn btn-primary" id="balloons_flying">放飞气球🎈</button>
+					<button class="btn btn-primary" id="cake_fadein">蛋糕来啦🍰</button>
+					<button class="btn btn-primary" id="light_candle"> 点蜡烛🕯️</button>
+					<button class="btn btn-primary" id="wish_message">闭眼许完愿后点我^_^</button>
+					<button class="btn btn-primary" id="story">查看小朋友专属信息✉️</button>
+					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
+					<!-- <div class="cs">
+						<img src="http://wx1.sinaimg.cn/large/006gFOhdly1fr0hdrzlolj30b40b4dg7.jpg" id="logo">
+					</div> -->
+					
+				</div>
+			</div>
+			<!-- <div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div> -->
+		</div>
+
+
+	</div>
+</body>
+<canvas class="canvas"></canvas>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="effect.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58229732-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+    var S = {
+        init: function () {
+            S.Drawing.init('.canvas');
+            document.body.classList.add('body--ready');
+            //想说的话
+            S.UI.simulate("22/10/01");
+            S.Drawing.loop(function () {
+                S.Shape.render();
+            });
+        }
+    };
+    S.Drawing = (function () {
+        var canvas,
+            context,
+            renderFn,
+            requestFrame = window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+        return {
+            init: function (el) {
+                canvas = document.querySelector(el);
+                context = canvas.getContext('2d');
+                this.adjustCanvas();
+                window.addEventListener('resize', function (e) {
+                    S.Drawing.adjustCanvas();
+                });
+            },
+            loop: function (fn) {
+                renderFn = !renderFn ? fn : renderFn;
+                this.clearFrame();
+                renderFn();
+                requestFrame.call(window, this.loop.bind(this));
+            },
+            adjustCanvas: function () {
+                canvas.width = window.innerWidth - 100;
+                canvas.height = window.innerHeight - 30;
+            },
+            clearFrame: function () {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+            },
+            getArea: function () {
+                return {w: canvas.width, h: canvas.height};
+            },
+            drawCircle: function (p, c) {
+                context.fillStyle = c.render();
+                context.beginPath();
+                context.arc(p.x, p.y, p.z, 0, 2 * Math.PI, true);
+                context.closePath();
+                context.fill();
+            }
+        };
+    }());
+    S.UI = (function () {
+        var interval,
+            currentAction,
+            time,
+            maxShapeSize = 30,
+            sequence = [],
+            cmd = '#';
+        function formatTime(date) {
+            var h = date.getHours(),
+                m = date.getMinutes(),
+                m = m < 10 ? '0' + m : m;
+            return h + ':' + m;
+        }
+        function getValue(value) {
+            return value && value.split(' ')[1];
+        }
+        function getAction(value) {
+            value = value && value.split(' ')[0];
+            return value && value[0] === cmd && value.substring(1);
+        }
+        function timedAction(fn, delay, max, reverse) {
+            clearInterval(interval);
+            currentAction = reverse ? max : 1;
+            fn(currentAction);
+            if (!max || (!reverse && currentAction < max) || (reverse && currentAction > 0)) {
+                interval = setInterval(function () {
+                    currentAction = reverse ? currentAction - 1 : currentAction + 1;
+                    fn(currentAction);
+                    if ((!reverse && max && currentAction === max) || (reverse && currentAction === 0)) {
+                        clearInterval(interval);
+                    }
+                }, delay);
+            }
+        }
+        function performAction(value) {
+            var action,
+                value,
+                current;
+            sequence = typeof (value) === 'object' ? value : sequence.concat(value.split('|'));
+            timedAction(function (index) {
+                current = sequence.shift();
+                action = getAction(current);
+                value = getValue(current);
+                switch (action) {
+                    case 'countdown':
+                        value = parseInt(value) || 10;
+                        value = value > 0 ? value : 10;
+                        timedAction(function (index) {
+                            if (index === 0) {
+                                if (sequence.length === 0) {
+                                    S.Shape.switchShape(S.ShapeBuilder.letter(''));
+                                } else {
+                                    performAction(sequence);
+                                }
+                            } else {
+                                S.Shape.switchShape(S.ShapeBuilder.letter(index), true);
+                            }
+                        }, 1000, value, true);
+                        break;
+                    case 'rectangle':
+                        value = value && value.split('x');
+                        value = (value && value.length === 2) ? value : [maxShapeSize, maxShapeSize / 2];
+                        S.Shape.switchShape(S.ShapeBuilder.rectangle(Math.min(maxShapeSize, parseInt(value[0])), Math.min(maxShapeSize, parseInt(value[1]))));
+                        break;
+                    case 'circle':
+                        value = parseInt(value) || maxShapeSize;
+                        value = Math.min(value, maxShapeSize);
+                        S.Shape.switchShape(S.ShapeBuilder.circle(value));
+                        break;
+                    case 'time':
+                        var t = formatTime(new Date());
+                        if (sequence.length > 0) {
+                            S.Shape.switchShape(S.ShapeBuilder.letter(t));
+                        } else {
+                            timedAction(function () {
+                                t = formatTime(new Date());
+                                if (t !== time) {
+                                    time = t;
+                                    S.Shape.switchShape(S.ShapeBuilder.letter(time));
+                                }
+                            }, 1000);
+                        }
+                        break;
+                    default:
+                        S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'HacPai' : current));
+                }
+            }, 2000, sequence.length);
+        }
+        return {
+            simulate: function (action) {
+                performAction(action);
+            }
+        };
+    }());
+    S.Point = function (args) {
+        this.x = args.x;
+        this.y = args.y;
+        this.z = args.z;
+        this.a = args.a;
+        this.h = args.h;
+    };
+    S.Color = function (r, g, b, a) {
+        this.r = r;
+        this.g = g;
+        this.b = b;
+        this.a = a;
+    };
+    S.Color.prototype = {
+        render: function () {
+            return 'rgba(' + this.r + ',' + +this.g + ',' + this.b + ',' + this.a + ')';
+        }
+    };
+    S.Dot = function (x, y) {
+        this.p = new S.Point({
+            x: x,
+            y: y,
+            z: 5,
+            a: 1,
+            h: 0
+        });
+        this.e = 0.07;
+        this.s = true;
+        this.c = new S.Color(255, 255, 255, this.p.a);
+        this.t = this.clone();
+        this.q = [];
+    };
+    S.Dot.prototype = {
+        clone: function () {
+            return new S.Point({
+                x: this.x,
+                y: this.y,
+                z: this.z,
+                a: this.a,
+                h: this.h
+            });
+        },
+        _draw: function () {
+            this.c.a = this.p.a;
+            S.Drawing.drawCircle(this.p, this.c);
+        },
+        _moveTowards: function (n) {
+            var details = this.distanceTo(n, true),
+                dx = details[0],
+                dy = details[1],
+                d = details[2],
+                e = this.e * d;
+            if (this.p.h === -1) {
+                this.p.x = n.x;
+                this.p.y = n.y;
+                return true;
+            }
+            if (d > 1) {
+                this.p.x -= ((dx / d) * e);
+                this.p.y -= ((dy / d) * e);
+            } else {
+                if (this.p.h > 0) {
+                    this.p.h--;
+                } else {
+                    return true;
+                }
+            }
+            return false;
+        },
+        _update: function () {
+            if (this._moveTowards(this.t)) {
+                var p = this.q.shift();
+                if (p) {
+                    this.t.x = p.x || this.p.x;
+                    this.t.y = p.y || this.p.y;
+                    this.t.z = p.z || this.p.z;
+                    this.t.a = p.a || this.p.a;
+                    this.p.h = p.h || 0;
+                } else {
+                    if (this.s) {
+                        this.p.x -= Math.sin(Math.random() * 3.142);
+                        this.p.y -= Math.sin(Math.random() * 3.142);
+                    } else {
+                        this.move(new S.Point({
+                            x: this.p.x + (Math.random() * 50) - 25,
+                            y: this.p.y + (Math.random() * 50) - 25
+                        }));
+                    }
+                }
+            }
+            d = this.p.a - this.t.a;
+            this.p.a = Math.max(0.1, this.p.a - (d * 0.05));
+            d = this.p.z - this.t.z;
+            this.p.z = Math.max(1, this.p.z - (d * 0.05));
+        },
+        distanceTo: function (n, details) {
+            var dx = this.p.x - n.x,
+                dy = this.p.y - n.y,
+                d = Math.sqrt(dx * dx + dy * dy);
+            return details ? [dx, dy, d] : d;
+        },
+        move: function (p, avoidStatic) {
+            if (!avoidStatic || (avoidStatic && this.distanceTo(p) > 1)) {
+                this.q.push(p);
+            }
+        },
+        render: function () {
+            this._update();
+            this._draw();
+        }
+    };
+    S.ShapeBuilder = (function () {
+        var gap = 13,
+            shapeCanvas = document.createElement('canvas'),
+            shapeContext = shapeCanvas.getContext('2d'),
+            fontSize = 500,
+            fontFamily = 'Avenir, Helvetica Neue, Helvetica, Arial, sans-serif';
+        function fit() {
+            shapeCanvas.width = Math.floor(window.innerWidth / gap) * gap;
+            shapeCanvas.height = Math.floor(window.innerHeight / gap) * gap;
+            shapeContext.fillStyle = 'red';
+            shapeContext.textBaseline = 'middle';
+            shapeContext.textAlign = 'center';
+        }
+        function processCanvas() {
+            var pixels = shapeContext.getImageData(0, 0, shapeCanvas.width, shapeCanvas.height).data;
+            dots = [],
+                pixels,
+                x = 0,
+                y = 0,
+                fx = shapeCanvas.width,
+                fy = shapeCanvas.height,
+                w = 0,
+                h = 0;
+            for (var p = 0; p < pixels.length; p += (4 * gap)) {
+                if (pixels[p + 3] > 0) {
+                    dots.push(new S.Point({
+                        x: x,
+                        y: y
+                    }));
+                    w = x > w ? x : w;
+                    h = y > h ? y : h;
+                    fx = x < fx ? x : fx;
+                    fy = y < fy ? y : fy;
+                }
+                x += gap;
+                if (x >= shapeCanvas.width) {
+                    x = 0;
+                    y += gap;
+                    p += gap * 4 * shapeCanvas.width;
+                }
+            }
+            return {dots: dots, w: w + fx, h: h + fy};
+        }
+        function setFontSize(s) {
+            shapeContext.font = 'bold ' + s + 'px ' + fontFamily;
+        }
+        function isNumber(n) {
+            return !isNaN(parseFloat(n)) && isFinite(n);
+        }
+        function init() {
+            fit();
+            window.addEventListener('resize', fit);
+        }
+        // Init
+        init();
+        return {
+            imageFile: function (url, callback) {
+                var image = new Image(),
+                    a = S.Drawing.getArea();
+                image.onload = function () {
+                    shapeContext.clearRect(0, 0, shapeCanvas.width, shapeCanvas.height);
+                    shapeContext.drawImage(this, 0, 0, a.h * 0.6, a.h * 0.6);
+                    callback(processCanvas());
+                };
+                image.onerror = function () {
+                    callback(S.ShapeBuilder.letter('What?'));
+                };
+                image.src = url;
+            },
+            circle: function (d) {
+                var r = Math.max(0, d) / 2;
+                shapeContext.clearRect(0, 0, shapeCanvas.width, shapeCanvas.height);
+                shapeContext.beginPath();
+                shapeContext.arc(r * gap, r * gap, r * gap, 0, 2 * Math.PI, false);
+                shapeContext.fill();
+                shapeContext.closePath();
+                return processCanvas();
+            },
+            letter: function (l) {
+                var s = 0;
+                setFontSize(fontSize);
+                s = Math.min(fontSize,
+                    (shapeCanvas.width / shapeContext.measureText(l).width) * 0.8 * fontSize,
+                    (shapeCanvas.height / fontSize) * (isNumber(l) ? 1 : 0.45) * fontSize);
+                setFontSize(s);
+                shapeContext.clearRect(0, 0, shapeCanvas.width, shapeCanvas.height);
+                shapeContext.fillText(l, shapeCanvas.width / 2, shapeCanvas.height / 2);
+                return processCanvas();
+            },
+            rectangle: function (w, h) {
+                var dots = [],
+                    width = gap * w,
+                    height = gap * h;
+                for (var y = 0; y < height; y += gap) {
+                    for (var x = 0; x < width; x += gap) {
+                        dots.push(new S.Point({
+                            x: x,
+                            y: y
+                        }));
+                    }
+                }
+                return {dots: dots, w: width, h: height};
+            }
+        };
+    }());
+    S.Shape = (function () {
+        var dots = [],
+            width = 0,
+            height = 0,
+            cx = 0,
+            cy = 0;
+        function compensate() {
+            var a = S.Drawing.getArea();
+            cx = a.w / 2 - width / 2;
+            cy = a.h / 2 - height / 2;
+        }
+        return {
+            shuffleIdle: function () {
+                var a = S.Drawing.getArea();
+                for (var d = 0; d < dots.length; d++) {
+                    if (!dots[d].s) {
+                        dots[d].move({
+                            x: Math.random() * a.w,
+                            y: Math.random() * a.h
+                        });
+                    }
+                }
+            },
+            switchShape: function (n, fast) {
+                var size,
+                    a = S.Drawing.getArea();
+                width = n.w;
+                height = n.h;
+                compensate();
+                if (n.dots.length > dots.length) {
+                    size = n.dots.length - dots.length;
+                    for (var d = 1; d <= size; d++) {
+                        dots.push(new S.Dot(a.w / 2, a.h / 2));
+                    }
+                }
+                var d = 0,
+                    i = 0;
+                while (n.dots.length > 0) {
+                    i = Math.floor(Math.random() * n.dots.length);
+                    dots[d].e = fast ? 0.25 : (dots[d].s ? 0.14 : 0.11);
+                    if (dots[d].s) {
+                        dots[d].move(new S.Point({
+                            z: Math.random() * 20 + 10,
+                            a: Math.random(),
+                            h: 18
+                        }));
+                    } else {
+                        dots[d].move(new S.Point({
+                            z: Math.random() * 5 + 5,
+                            h: fast ? 18 : 30
+                        }));
+                    }
+                    dots[d].s = true;
+                    dots[d].move(new S.Point({
+                        x: n.dots[i].x + cx,
+                        y: n.dots[i].y + cy,
+                        a: 1,
+                        z: 5,
+                        h: 0
+                    }));
+                    n.dots = n.dots.slice(0, i).concat(n.dots.slice(i + 1));
+                    d++;
+                }
+                for (var i = d; i < dots.length; i++) {
+                    if (dots[i].s) {
+                        dots[i].move(new S.Point({
+                            z: Math.random() * 20 + 10,
+                            a: Math.random(),
+                            h: 20
+                        }));
+                        dots[i].s = false;
+                        dots[i].e = 0.04;
+                        dots[i].move(new S.Point({
+                            x: Math.random() * a.w,
+                            y: Math.random() * a.h,
+                            a: 0.3, //.4
+                            z: Math.random() * 4,
+                            h: 0
+                        }));
+                    }
+                }
+            },
+            render: function () {
+                for (var d = 0; d < dots.length; d++) {
+                    dots[d].render();
+                }
+            }
+        };
+    }());
+    S.init();
+</script>
+</html>
